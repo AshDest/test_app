@@ -13,7 +13,7 @@ class _BottomBarState extends State<BottomBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bottom Bar'),
+        title: const Text('Ticket App'),
       ),
       body: const Center(
         child: Text('Bottom Bar'),
@@ -25,13 +25,17 @@ class _BottomBarState extends State<BottomBar> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.report),
+            label: 'Report',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.car_crash),
+            label: 'Business',
           ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.settings),
+          //   label: 'School',
+          // ),
         ],
         currentIndex: 0,
         selectedItemColor: Colors.amber[800],
